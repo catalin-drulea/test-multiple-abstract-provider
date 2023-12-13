@@ -12,11 +12,6 @@ export class AppComponent implements OnChanges {
   public counter: number;
 
   constructor() {
-    // this.firstString = this.firstSharedService.getFirstVariable();
-    // setInterval(() => {
-    //   // this.counter = this.firstSharedService.getFirstCounterValue();
-    //   console.log(`app counter is ${this.counter}`);
-    // }, 5000);
   }
 
   ngOnChanges() {}

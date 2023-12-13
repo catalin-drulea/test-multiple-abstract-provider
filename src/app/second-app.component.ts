@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
 import { DataSourceService } from '../first-shared-module/abstract-service/data-source.service';
-import { AnotherDataSourceService } from './services/second-extended-service/another-data-source.service';
+import { SecondDataSourceService } from './services/second-extended-service/second-data-source.service';
 
 @Component({
   selector: 'app-second-another',
   template: `<app-table></app-table>`,
   providers: [
-    // Provide AnotherDataSourceService for SecondAnotherComponent
-    { provide: DataSourceService, useClass: AnotherDataSourceService },
+    { provide: DataSourceService, useClass: SecondDataSourceService },
   ],
 })
 export class SecondAnotherComponent {
   constructor() {
-    console.log('first another component');
+    console.log('second another component');
   }
 }

@@ -18,7 +18,8 @@
             "main": "src/main.ts",
             "assets": [],
             "styles": ["src/global_styles.css"],
-            "scripts": []
+            "scripts": [],
+            "tsConfig": "tsconfig.json"
           },
           "configurations": {
             "production": {
@@ -79,5 +80,8 @@
       }
     }
   },
-  "defaultProject": "demo"
+  "defaultProject": "demo",
+  "cli": {
+    "analytics": false
+  }
 }

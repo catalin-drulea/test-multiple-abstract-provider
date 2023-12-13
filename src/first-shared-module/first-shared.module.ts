@@ -6,5 +6,6 @@ import { CommonModule } from '@angular/common';
   declarations: [TableComponent],
   imports: [CommonModule],
   providers: [],
+  exports: [TableComponent]
 })
 export class FirstSharedModule {}
